@@ -1,0 +1,126 @@
+/* === Genel stil ayarları === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+/* === Ana konteyner === */
+.app-container {
+  display: flex;
+  gap: 2rem;
+}
+
+/* === Ağaç alanı === */
+.tree-container {
+  flex: 1;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tree-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tree-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+/* === Tree node === */
+.tree-node {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tree-node:hover {
+  background-color: #f0f0f0;
+}
+
+.tree-node.selected {
+  background-color: #e6f7ff;
+  font-weight: bold;
+}
+
+.node-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.node-buttons button {
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.node-buttons .edit-btn {
+  background-color: #1890ff;
+  color: white;
+}
+
+.node-buttons .delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+/* === İçerik gösterimi === */
+.node-content {
+  font-size: 0.85rem;
+  color: #666;
+  padding-left: 20px;
+  margin-top: 4px;
+}
+
+/* === Sağ input formu === */
+.editor-container {
+  width: 300px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.editor-container h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.editor-container input,
+.editor-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.editor-container button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #52c41a;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.editor-container button:hover {
+  background-color: #389e0d;
+}
